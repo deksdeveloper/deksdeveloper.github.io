@@ -35,16 +35,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between mb-12">
-            <h2 className="text-xs font-black uppercase tracking-[0.4em] text-black/30 flex items-center gap-4">
-              <span className="w-12 h-[1px] bg-black/10"></span>
-              Latest Creations
-            </h2>
-            <div className="text-[10px] font-medium text-[#666666]/60 italic font-serif text-right">
-              Scroll to explore — {new Date().getFullYear()}
-            </div>
-          </div>
-
           <Carousel />
         </section>
       </div>
@@ -99,8 +89,8 @@ export default function Home() {
                   <a href="https://github.com/deksdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
                     <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> Github
                   </a>
-                  <a href="#" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
-                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> Instagram
+                  <a href="https://instagram.com/efethegreatest" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
+                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> İnstagram
                   </a>
                 </div>
               </div>

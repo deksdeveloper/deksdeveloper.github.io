@@ -38,7 +38,7 @@ export default function Footer() {
                                 {[
                                     { label: "Youtube", href: "https://youtube.com/@deksdeveloper" },
                                     { label: "Github", href: "https://github.com/deksdeveloper" },
-                                    { label: "Instagram", href: "#" }
+                                    { label: "Instagram", href: "https://instagram.com/efethegreatest" }
                                 ].map((link) => (
                                     <li key={link.label}>
                                         <a href={link.href} target="_blank" className="text-[13px] font-bold text-secondary hover:text-primary transition-colors flex items-center gap-2 group">
@@ -52,7 +52,7 @@ export default function Footer() {
                         <div className="space-y-8 col-span-2 sm:col-span-1">
                             <h4 className="text-[10px] font-black uppercase tracking-[.3em] text-primary/30">Location</h4>
                             <p className="text-[13px] font-bold text-secondary leading-relaxed">
-                                Istanbul, TR <br />
+                                İSTANBUL, TR <br />
                                 <span className="text-[11px] font-medium opacity-50">GMT+3</span>
                             </p>
                         </div>
