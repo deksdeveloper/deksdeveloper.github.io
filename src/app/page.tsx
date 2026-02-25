@@ -18,20 +18,6 @@ export default function Home() {
               <p className="text-base sm:text-lg text-[#666666] font-medium leading-relaxed">
                 Design, code, and lifestyle. Exploring the intersection of minimalist aesthetics and modern technology through visual storytelling.
               </p>
-              <div className="flex items-center justify-center gap-6 pt-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-black/20" />
-                  <span className="text-[11px] font-bold text-black/40 uppercase tracking-widest">Tutorials</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-black/20" />
-                  <span className="text-[11px] font-bold text-black/40 uppercase tracking-widest">Case Studies</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-black/20" />
-                  <span className="text-[11px] font-bold text-black/40 uppercase tracking-widest">Journal</span>
-                </div>
-              </div>
             </div>
           </div>
 
