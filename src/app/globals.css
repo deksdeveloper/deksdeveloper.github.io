@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-inter);
+}
+
+:root {
+  --primary: #0a0a0a;
+  --secondary: #666666;
+  --accent: #000000;
+  --background: #fafafa;
+  --surface: #ffffff;
+  --border: rgba(0, 0, 0, 0.05);
+  --glass: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/* --- Layout Utils --- */
+.page-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding: 0 80px;
+  }
+}
+
+/* --- Typography --- */
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: var(--primary);
+  text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+    line-height: 32px;
+  }
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--secondary);
+  max-width: 480px;
+}
+
+/* --- Components --- */
+
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.video-container {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.video-container:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.3);
+}
+
+.play-reveal {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.video-container:hover .play-reveal {
+  opacity: 1;
+}
+
+/* --- Swiper Customization --- */
+
+.swiper {
+  overflow: visible !important;
+  padding: 40px 0 100px 0 !important;
+}
+
+/* --- Pagination Dots --- */
+.swiper-pagination-bullet {
+  background: var(--primary) !important;
+  opacity: 0.1 !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin: 0 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+.nav-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* --- Noise Grain Effect --- */
+.noise-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) var(--background);
+  scroll-behavior: smooth;
+}
