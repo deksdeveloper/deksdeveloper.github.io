@@ -1,8 +1,9 @@
 import Carousel from '@/components/Carousel';
+import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#fafafa] transition-colors duration-500 overflow-x-hidden pt-[50vh] sm:pt-[60vh] lowercase">
+    <main className="min-h-screen bg-[#fafafa] transition-colors duration-500 overflow-x-hidden pt-16 sm:pt-24">
       {/* Background Decorative Element */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-black/[0.03] to-transparent rounded-full blur-[120px] -z-10 pointer-events-none" />
 
@@ -10,8 +11,8 @@ export default function Home() {
         {/* Unified Gallery Header Section */}
         <section className="pb-12">
           {/* ... existing header content ... */}
-          <div className="flex flex-col items-center text-center mb-40 sm:mb-56 animate-fade-in">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-[#0a0a0a] mb-8 leading-[0.9]">
+          <div className="flex flex-col items-center text-center mb-24 sm:mb-32 animate-fade-in">
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-[#0a0a0a] leading-[0.9]" style={{ marginBottom: '3.5rem' }}>
               deks<span className="text-black/20 italic font-serif font-light">developer</span>
             </h1>
             <div className="max-w-[600px] mx-auto space-y-4">
@@ -26,7 +27,14 @@ export default function Home() {
       </div>
 
       {/* --- Visual Divider 1 (Reduced height) --- */}
-      <div className="h-24 sm:h-32 flex items-center">
+      <div className="h-12 sm:h-16 flex items-center">
+        <div className="w-full h-px bg-black/[0.05]" />
+      </div>
+
+      <Projects />
+
+      {/* --- Visual Divider 2 --- */}
+      <div className="h-12 sm:h-16 flex items-center">
         <div className="w-full h-px bg-black/[0.05]" />
       </div>
 
@@ -70,13 +78,13 @@ export default function Home() {
                 <span className="text-[10px] font-black tracking-[.3em] text-black/10 uppercase">Social</span>
                 <div className="flex flex-col gap-4">
                   <a href="https://youtube.com/@deksdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
-                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> Youtube
+                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> YouTube
                   </a>
                   <a href="https://github.com/deksdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
-                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> Github
+                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> GitHub
                   </a>
                   <a href="https://instagram.com/efethegreatest" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
-                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> İnstagram
+                    <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> Instagram
                   </a>
                 </div>
               </div>
@@ -93,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* --- Visual Divider 2 (Reduced height) --- */}
-      <div className="h-24 sm:h-32 flex items-center">
+      <div className="h-12 sm:h-16 flex items-center">
         <div className="w-full h-px bg-black/[0.05]" />
       </div>
     </main>
