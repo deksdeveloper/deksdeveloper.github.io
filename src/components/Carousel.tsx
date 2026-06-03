@@ -37,6 +37,14 @@ const VIDEOS = [
     { videoId: "dRBR6N7MfQQ", title: "samp interior bug detector", category: "SAMP" },
     { videoId: "ApSzfdxmdaM", title: "samp phone system", category: "SAMP" },
     { videoId: "d3mOd0tJYow", title: "samp dynamic bus station and journey", category: "SAMP" },
+
+    { videoId: "xqLkkGVXGUI", title: "openmp inventory system", category: "SAMP" },
+    { videoId: "8fAGFHWGqRg", title: "openmp login, register, character selector and creator", category: "SAMP" },
+    { videoId: "yEzTO345jnQ", title: "openmp dx ui", category: "SAMP" },
+    { videoId: "lnRDpxthiMc", title: "openmp dx ui 2", category: "SAMP" },
+    { videoId: "PePrjPJONPg", title: "openmp dx ui 3", category: "SAMP" },
+    { videoId: "2C_f0Xj_sAc", title: "openmp cef inventory", category: "SAMP" },
+
     { videoId: "DESDALKIK8c", title: "samp plate steal", category: "SAMP" },
     { videoId: "mCOAsr03Jqk", title: "samp improved register", category: "SAMP" },
     { videoId: "aJq3AgLWXl0", title: "samp house", category: "SAMP" },

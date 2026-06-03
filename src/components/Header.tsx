@@ -55,7 +55,7 @@ export default function Header() {
                     <Link href="/" className="group flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-primary group-hover:scale-125 transition-transform duration-300" />
                         <span className="text-[12px] font-black tracking-tighter uppercase text-primary">
-                            deksdeveloper
+                            yeatdev
                         </span>
                     </Link>
 

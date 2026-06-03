@@ -36,8 +36,8 @@ export default function Footer() {
                             <h4 className="text-[10px] font-black uppercase tracking-[.3em] text-primary/30">Social</h4>
                             <ul className="space-y-5">
                                 {[
-                                    { label: "Youtube", href: "https://youtube.com/@deksdeveloper" },
-                                    { label: "Github", href: "https://github.com/deksdeveloper" },
+                                    { label: "Youtube", href: "https://youtube.com/@yeatdeveloper" },
+                                    { label: "Github", href: "https://github.com/yeatdev" },
                                     { label: "Instagram", href: "https://instagram.com/efethegreatest" }
                                 ].map((link) => (
                                     <li key={link.label}>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
                     <div className="flex items-center gap-5">
                         <p className="text-[10px] font-bold tracking-[.2em] text-[#666666] uppercase">
-                            © {new Date().getFullYear()} DEKSDEVELOPER — MADE WITH PASSION
+                            © {new Date().getFullYear()} YEATDEV — MADE WITH PASSION
                         </p>
                     </div>
 

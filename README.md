@@ -1,7 +1,7 @@
-# deksdeveloper
+# yeatdev
 
 ## Purpose
-deksdeveloper is a minimalist professional portfolio and digital journal designed to showcase development projects and visual storytelling. The project focuses on a high-end aesthetic, clean layout, and smooth user interactions to explore the intersection of modern technology and minimalist design.
+yeatdev is a minimalist professional portfolio and digital journal designed to showcase development projects and visual storytelling. The project focuses on a high-end aesthetic, clean layout, and smooth user interactions to explore the intersection of modern technology and minimalist design.
 
 ## Tech Stack
 The application is built using modern web development standards and tools:

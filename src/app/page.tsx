@@ -13,7 +13,7 @@ export default function Home() {
           {/* ... existing header content ... */}
           <div className="flex flex-col items-center text-center mb-24 sm:mb-32 animate-fade-in">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-[#0a0a0a] leading-[0.9]" style={{ marginBottom: '3.5rem' }}>
-              deks<span className="text-black/20 italic font-serif font-light">developer</span>
+              yeat<span className="text-black/20 italic font-serif font-light">dev</span>
             </h1>
             <div className="max-w-[600px] mx-auto space-y-4">
               <p className="text-base sm:text-lg text-[#666666] font-medium leading-relaxed">
@@ -77,10 +77,10 @@ export default function Home() {
               <div className="space-y-4">
                 <span className="text-[10px] font-black tracking-[.3em] text-black/10 uppercase">Social</span>
                 <div className="flex flex-col gap-4">
-                  <a href="https://youtube.com/@deksdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
+                  <a href="https://youtube.com/@yeatdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
                     <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> YouTube
                   </a>
-                  <a href="https://github.com/deksdeveloper" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
+                  <a href="https://github.com/yeatdev" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">
                     <span className="w-6 h-[1px] bg-black/10 group-hover:w-10 transition-all" /> GitHub
                   </a>
                   <a href="https://instagram.com/efethegreatest" target="_blank" className="flex items-center gap-3 text-sm font-bold text-[#666666] hover:text-[#0a0a0a] transition-all group">

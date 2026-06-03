@@ -10,7 +10,7 @@ const inter = Inter({
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "deksdeveloper",
+  title: "yeatdev",
   description: "Minimalist developer blog and video explorer.",
 };
 

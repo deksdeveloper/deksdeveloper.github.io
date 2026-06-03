@@ -12,8 +12,8 @@ const PROJECTS = [
     {
         title: "DAWNO IDE",
         description: "A professional, classic code editor for PAWN scripting, built with modern web technologies and a focus on developer experience.",
-        image: "https://opengraph.githubassets.com/1/deksdeveloper/dawno",
-        github: "https://github.com/deksdeveloper/dawno",
+        image: "https://opengraph.githubassets.com/1/yeatdev/dawno",
+        github: "https://github.com/yeatdev/dawno",
         tags: ["Electron", "React", "Monaco Editor", "TypeScript"],
         year: "2026",
         index: "01",
@@ -21,12 +21,48 @@ const PROJECTS = [
     {
         title: "DAWNO Web",
         description: "The digital gateway for DAWNO, featuring a high-end, glassmorphic landing page designed to showcase the power of the core editor.",
-        image: null,
-        github: "https://github.com/deksdeveloper/dawno-web",
+        image: "https://opengraph.githubassets.com/1/yeatdev/dawno-web",
+        github: "https://github.com/yeatdev/dawno-web",
         tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
         year: "2026",
         index: "02",
-    }
+    },
+    {
+        title: "omp-dx",
+        description: "Server-authoritative, hardware-accelerated 2D rendering and UI framework for open.mp and SA-MP using Direct3D9.",
+        image: "https://opengraph.githubassets.com/1/yeatdev/omp-dx",
+        github: "https://github.com/yeatdev/omp-dx",
+        tags: ["C++", "Direct3D9", "open.mp"],
+        year: "2026",
+        index: "05",
+    },
+    {
+        title: "omp-cef-installer",
+        description: "A lightweight desktop application for installing and managing Chromium Embedded Framework (CEF) for Open.MP",
+        image: "https://opengraph.githubassets.com/1/yeatdev/omp-cef-installer",
+        github: "https://github.com/yeatdev/omp-cef-installer",
+        tags: ["Rust", "Tauri", "Javascript"],
+        year: "2026",
+        index: "05",
+    },
+    {
+        title: "github-repo-analyzer",
+        description: " AI-powered TUI tool to analyze GitHub repositories and generate READMEs, .gitignore files, security reports, and more. ",
+        image: "https://opengraph.githubassets.com/1/yeatdev/github-repo-analyzer",
+        github: "https://github.com/yeatdev/github-repo-analyzer",
+        tags: ["Javascript", "Inquirer", "TUI"],
+        year: "2026",
+        index: "03",
+    },
+    {
+        title: "discord-ai-userbot",
+        description: "Self-hosted AI-powered Discord selfbot that generates human-like conversations and responses. ",
+        image: "https://opengraph.githubassets.com/1/yeatdev/discord-ai-userbot",
+        github: "https://github.com/yeatdev/discord-ai-userbot",
+        tags: ["Javascript"],
+        year: "2026",
+        index: "03",
+    },
 ];
 
 function FallbackPattern({ title }: { title: string }) {
